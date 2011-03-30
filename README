@@ -1,0 +1,18 @@
+##Zählerabfrage in Python für Lesekopf
+
++öffnen Serielle Schnittstelle /dev/USB0
++initialisieren der Abfrage
+-Puffern Stände
++Abspeichern Stände in Datei
++Schließen Datei
++Öffnen Datei Grepping Stände
++Einsortieren in sqlite 
+
+http://stackoverflow.com/questions/4876116/pyserial-connection-works-but-how-to-handle-output-with-ser-readline
+
+Hi Frank. It's possible that there is a timeout due to the slow connection, but the documentation says that there is no timeout by default {link}. Try this -- change the line for line in 
+
+ser.readline(eol='!'): to 
+for line in ser:
+
+##Php Ordner
