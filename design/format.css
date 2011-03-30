@@ -1,0 +1,179 @@
+body {
+	font-size: 13px;
+	color: #ccc;
+	font-family: arial;
+}
+
+div#content {
+	margin-top: 10px;	
+	}
+
+div#left {
+	width: 150px;
+	float: left;	
+}
+
+div#middle {
+	width: 265px;
+	float: left;
+	margin-left:5px;	
+}
+
+div#right {
+	float: left;	
+	border: 1px solid black;
+		width:550px;
+	margin-left: 10px;
+}
+
+h1.prozent {
+	font-size: 3em;
+	margin-left: 20px;
+	line-height: 10px;
+}
+h1.euro {
+	font-size: 1.8em;
+	margin-left: 5px;
+	line-height: 20px;
+	text-align: center;
+}
+
+h2 {
+	background-color: #ccc;
+	color: #FFF;
+	text-align: right;
+	padding: 8px;
+	font-size: 1.1em;
+	margin: 0px;
+}
+
+div#visualization {
+
+	}
+
+/*MENÜ*/
+
+div#header {
+	height:100px;
+	background:#CCC;
+	color:#FFF;
+	
+	}
+	
+div#menu {
+	height:35px;
+	background:#999;
+	color:#FFF;
+	text-align:right;
+	}
+
+ul.mainmenu {
+	list-style-type:none;
+	margin-right:50px;
+	}
+	
+li.menupoint {
+	display:inline;
+	margin: 5px 5px;
+	font-size:1em;
+	}
+	
+.menupoint a {
+	text-decoration:none;
+	color:#FFF;
+	}
+
+div#chart_div {
+
+	padding-left: 18px;
+}
+
+
+/*TICKER*/
+
+div#ticker {
+	background-color: orange;
+}
+div.Anbieter {
+	font-size: 1.5em;
+}
+div.Produkt {
+	font-size: 2.5em;		
+}
+div.Preis {
+	font-size: 2.5em;
+	color:darkred;		
+}
+div.Nachricht {
+	font-size: 2.5em;
+	color:red;		
+}
+
+/* KALENDER */
+.calender {
+    width:280px;
+    border:1px solid black;
+}
+* html .calender,
+* + html .calender {
+    width:282px;
+}
+.calender div.after,
+.calender div.before{
+    color:silver;
+}
+.day {
+    float:left;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+}
+.day.headline {
+    background:silver;
+}
+.day.current {
+    font-weight:bold;
+}
+.clear {
+    clear:left;
+}
+.pagination {
+    text-align: center;
+    height:20px;
+    line-height:20px;
+    font-weight: bold;
+}
+.pagination a {
+    width:20px;
+    height:20px;
+}
+
+/* Kühlung */
+
+#cal {
+	width:250px;
+	float:left;
+	}
+
+div#temp {
+	float:left;
+	width:600px;
+	margin-left:80px;
+	}
+	
+img.pfeil {
+	height:60px;
+	}
+	
+.werte {
+	width:120px;
+	float:left;
+	text-align:center;
+	}
+
+/* Energie */
+td.budget {
+	width:135px;	
+	}	
+

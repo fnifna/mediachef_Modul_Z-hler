@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+# -*- coding: iso-8859-1 -*- 
+
+import re
+import time
+import serial
+#tout = 20
+
+def doRead(ser,term):
+    matcher = re.compile(term)    #gives you the ability to search for anything
+    buff    = ""
+    tic     = time.clock()
+    buff   += ser.read(128)
+    # you can use if not ('\n' in buff) too if you don't like re
+    while ((time.clock - tic) < tout) and (not matcher.search(buff)):
+       buff += ser.read(128)
+
+    return buff
+
+if __name__ == "__main__":
+#    ser = serial.Serial(PORT, BAUD, timeout = TOUT)
+	ser = serial.Serial()		
+	ser.baudrate = 300
+	ser.port = '/dev/ttyUSB0'     
+	ser.tout = 20 #20
+	ser.parity = serial.PARITY_EVEN
+	ser.stopbits = serial.STOPBITS_ONE
+	ser.bytesize = serial.SEVENBITS
+	ser.open()
+	ser.write('/?!')
+	print doRead(ser,term='\n')
+
